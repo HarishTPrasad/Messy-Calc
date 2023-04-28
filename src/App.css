@@ -1,0 +1,204 @@
+
+.calc {
+  width: 320px;
+  margin: 50px auto;
+ 
+}
+
+#answer {
+  background-color: #7fcdcd;
+ 
+  font-size: 35px;
+  width: 305px;
+  height: 50px;
+  text-align: right;
+  border: 4px solid rgb(255, 255, 255);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+}
+
+#answer:hover{
+  transform: scale(1.2);
+  border-radius: 20px;
+  
+}
+
+
+.button{
+    background-color:#98b4d4;
+    height: 80px;
+    width: 80px;
+    color:rgb(3, 0, 86);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 25px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.button:hover{
+  background-color: #f7cac9 ;
+  border-radius: 35px;
+  transform: rotate(360deg);
+ 
+}
+
+#button1 {
+  width: 160px;
+  border-bottom-left-radius:30px;
+}
+#button2 {
+  width: 160px;
+  border-bottom-right-radius: 30px;
+}
+
+#title {
+  
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  background-color: #E15D44;
+  color: aliceblue;
+  height: 70px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border: 10px solid white;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+}
+#title:hover {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  /* transform: scale(1.1); */
+  background-color:#c3447a ;
+}
+
+
+.body {
+  background-color: #f7cac9;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border: 10px solid white;
+  animation-name: harry1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: #c3447a;
+  color: aliceblue;
+  height: 70px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border: 10px solid white;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+#footer:hover{
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  /* transform: scale(1.1); */
+  background-color:#E15D44 ;
+}
+
+.full {
+  background-color: #7FCDCD;
+  height: 1500px;
+  
+}
+
+
+
+
+
+@keyframes harry1 {
+  0%{ 
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+  }
+  25%{
+    border-radius: 400px 0px;
+   
+  }
+  50%{
+    border-radius: 500px 500px;
+  }
+  75%{
+    border-radius: 0px 400px;
+  }
+  100%{
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+  }
+}
+
+#bigbox{
+  position: absolute;
+
+}
+
+#bigg{
+  display: flex;
+  justify-self: center;
+  border: 10px solid white;
+  height: 600px;
+}
+
+.big {
+ position: absolute;
+  height: 300px;
+  width: 300px;
+   font-size: 200px;
+   background-color: #7FCDCD;
+   border: 10px solid white;
+   border-radius: 150px;
+   animation-name: harry;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+
+}
+
+
+@keyframes harry {
+  0%{ 
+   top: 0px;
+   left: 0px;
+  
+   
+  }
+  25%{
+    top:300px;
+    left: 0px;
+   transform: rotate(90deg);
+  }
+  75%{
+    top: 300px;
+    left: 1190px;  
+    
+  }
+ 
+  100%{
+    top: 0px;
+    left: 1190px;
+   
+  }
+  /* 100%{
+    top: 0px;
+    left: 0px;
+    
+  } */
+}
